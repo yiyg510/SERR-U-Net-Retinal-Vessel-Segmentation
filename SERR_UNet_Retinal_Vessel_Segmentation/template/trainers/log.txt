@@ -1,0 +1,103 @@
+/home/haishan/anaconda3/bin/python3.7 "/home/haishan/Data/dataLiXiang/Retina-VesselNet stare/main_train.py"
+2020-10-03 19:50:31.867045: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2020-10-03 19:50:31.867074: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+[INFO] Reading Configs...
+[INFO] Preparing Data...
+[INFO] Reading...
+[INFO] Saving Training Data
+[INFO] Reading...
+[INFO] Saving Validation Data
+[INFO] Building Model...
+2020-10-03 19:50:33.550157: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2020-10-03 19:50:33.576254: E tensorflow/stream_executor/cuda/cuda_driver.cc:314] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2020-10-03 19:50:33.576323: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (haishan-ThinkStation-P720): /proc/driver/nvidia/version does not exist
+2020-10-03 19:50:33.577216: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-10-03 19:50:33.592913: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2100000000 Hz
+2020-10-03 19:50:33.593619: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5608d71ae210 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-10-03 19:50:33.593650: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+[INFO] Saving model...
+2020-10-03 19:50:34.205836: I tensorflow/core/profiler/lib/profiler_session.cc:164] Profiler session started.
+[INFO] Model saved
+[INFO] Training...
+[INFO] Visualize Image Sample...
+WARNING:tensorflow:From /home/haishan/Data/dataLiXiang/Retina-VesselNet stare/perception/trainers/segmention_trainer.py:49: Model.fit_generator (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use Model.fit, which supports generators.
+Epoch 1/15
+2020-10-03 19:50:39.506644: I tensorflow/core/profiler/lib/profiler_session.cc:164] Profiler session started.
+  1/800 [..............................] - ETA: 0s - loss: 1.3167 - categorical_accuracy: 0.5310WARNING:tensorflow:From /home/haishan/anaconda3/lib/python3.7/site-packages/tensorflow/python/ops/summary_ops_v2.py:1277: stop (from tensorflow.python.eager.profiler) is deprecated and will be removed after 2020-07-01.
+Instructions for updating:
+use `tf.profiler.experimental.stop` instead.
+2020-10-03 19:50:41.728034: I tensorflow/core/profiler/rpc/client/save_profile.cc:176] Creating directory: ./experiments/VesselNet/checkpoint/train/plugins/profile/2020_10_03_19_50_41
+2020-10-03 19:50:41.732599: I tensorflow/core/profiler/rpc/client/save_profile.cc:182] Dumped gzipped tool data for trace.json.gz to ./experiments/VesselNet/checkpoint/train/plugins/profile/2020_10_03_19_50_41/haishan-ThinkStation-P720.trace.json.gz
+2020-10-03 19:50:41.739987: I tensorflow/core/profiler/rpc/client/save_profile.cc:176] Creating directory: ./experiments/VesselNet/checkpoint/train/plugins/profile/2020_10_03_19_50_41
+2020-10-03 19:50:41.740077: I tensorflow/core/profiler/rpc/client/save_profile.cc:182] Dumped gzipped tool data for memory_profile.json.gz to ./experiments/VesselNet/checkpoint/train/plugins/profile/2020_10_03_19_50_41/haishan-ThinkStation-P720.memory_profile.json.gz
+2020-10-03 19:50:41.740866: I tensorflow/python/profiler/internal/profiler_wrapper.cc:111] Creating directory: ./experiments/VesselNet/checkpoint/train/plugins/profile/2020_10_03_19_50_41Dumped tool data for xplane.pb to ./experiments/VesselNet/checkpoint/train/plugins/profile/2020_10_03_19_50_41/haishan-ThinkStation-P720.xplane.pb
+Dumped tool data for overview_page.pb to ./experiments/VesselNet/checkpoint/train/plugins/profile/2020_10_03_19_50_41/haishan-ThinkStation-P720.overview_page.pb
+Dumped tool data for input_pipeline.pb to ./experiments/VesselNet/checkpoint/train/plugins/profile/2020_10_03_19_50_41/haishan-ThinkStation-P720.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to ./experiments/VesselNet/checkpoint/train/plugins/profile/2020_10_03_19_50_41/haishan-ThinkStation-P720.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to ./experiments/VesselNet/checkpoint/train/plugins/profile/2020_10_03_19_50_41/haishan-ThinkStation-P720.kernel_stats.pb
+
+800/800 [==============================] - ETA: 0s - loss: 0.2487 - categorical_accuracy: 0.9179
+Epoch 00001: val_loss improved from inf to 0.25559, saving model to ./experiments/VesselNet/hdf5/VesselNet_best_weights.h5
+800/800 [==============================] - 1872s 2s/step - loss: 0.2487 - categorical_accuracy: 0.9179 - val_loss: 0.2556 - val_categorical_accuracy: 0.9332
+Epoch 2/15
+800/800 [==============================] - ETA: 0s - loss: 0.1957 - categorical_accuracy: 0.9446
+Epoch 00002: val_loss improved from 0.25559 to 0.16869, saving model to ./experiments/VesselNet/hdf5/VesselNet_best_weights.h5
+800/800 [==============================] - 1868s 2s/step - loss: 0.1957 - categorical_accuracy: 0.9446 - val_loss: 0.1687 - val_categorical_accuracy: 0.9383
+Epoch 3/15
+800/800 [==============================] - ETA: 0s - loss: 0.1248 - categorical_accuracy: 0.9510
+Epoch 00003: val_loss improved from 0.16869 to 0.16775, saving model to ./experiments/VesselNet/hdf5/VesselNet_best_weights.h5
+800/800 [==============================] - 1868s 2s/step - loss: 0.1248 - categorical_accuracy: 0.9510 - val_loss: 0.1677 - val_categorical_accuracy: 0.9390
+Epoch 4/15
+800/800 [==============================] - ETA: 0s - loss: 0.1123 - categorical_accuracy: 0.9553
+Epoch 00004: val_loss did not improve from 0.16775
+800/800 [==============================] - 1865s 2s/step - loss: 0.1123 - categorical_accuracy: 0.9553 - val_loss: 0.1752 - val_categorical_accuracy: 0.9401
+Epoch 5/15
+800/800 [==============================] - ETA: 0s - loss: 0.1028 - categorical_accuracy: 0.9585
+Epoch 00005: val_loss did not improve from 0.16775
+800/800 [==============================] - 1870s 2s/step - loss: 0.1028 - categorical_accuracy: 0.9585 - val_loss: 0.1752 - val_categorical_accuracy: 0.9411
+Epoch 6/15
+800/800 [==============================] - ETA: 0s - loss: 0.0954 - categorical_accuracy: 0.9612
+Epoch 00006: val_loss did not improve from 0.16775
+800/800 [==============================] - 1867s 2s/step - loss: 0.0954 - categorical_accuracy: 0.9612 - val_loss: 0.1810 - val_categorical_accuracy: 0.9405
+Epoch 7/15
+800/800 [==============================] - ETA: 0s - loss: 0.0893 - categorical_accuracy: 0.9635
+Epoch 00007: val_loss did not improve from 0.16775
+800/800 [==============================] - 1869s 2s/step - loss: 0.0893 - categorical_accuracy: 0.9635 - val_loss: 0.1905 - val_categorical_accuracy: 0.9397
+Epoch 8/15
+800/800 [==============================] - ETA: 0s - loss: 0.0854 - categorical_accuracy: 0.9649
+Epoch 00008: val_loss did not improve from 0.16775
+800/800 [==============================] - 1871s 2s/step - loss: 0.0854 - categorical_accuracy: 0.9649 - val_loss: 0.2102 - val_categorical_accuracy: 0.9368
+Epoch 9/15
+800/800 [==============================] - ETA: 0s - loss: 0.0813 - categorical_accuracy: 0.9665
+Epoch 00009: val_loss did not improve from 0.16775
+800/800 [==============================] - 1869s 2s/step - loss: 0.0813 - categorical_accuracy: 0.9665 - val_loss: 0.2222 - val_categorical_accuracy: 0.9337
+Epoch 10/15
+800/800 [==============================] - ETA: 0s - loss: 0.0782 - categorical_accuracy: 0.9677
+Epoch 00010: val_loss did not improve from 0.16775
+800/800 [==============================] - 1868s 2s/step - loss: 0.0782 - categorical_accuracy: 0.9677 - val_loss: 0.2565 - val_categorical_accuracy: 0.9308
+Epoch 11/15
+800/800 [==============================] - ETA: 0s - loss: 0.0752 - categorical_accuracy: 0.9689
+Epoch 00011: val_loss did not improve from 0.16775
+800/800 [==============================] - 1870s 2s/step - loss: 0.0752 - categorical_accuracy: 0.9689 - val_loss: 0.2322 - val_categorical_accuracy: 0.9358
+Epoch 12/15
+800/800 [==============================] - ETA: 0s - loss: 0.0726 - categorical_accuracy: 0.9700
+Epoch 00012: val_loss did not improve from 0.16775
+800/800 [==============================] - 1869s 2s/step - loss: 0.0726 - categorical_accuracy: 0.9700 - val_loss: 0.2501 - val_categorical_accuracy: 0.9339
+Epoch 13/15
+800/800 [==============================] - ETA: 0s - loss: 0.0703 - categorical_accuracy: 0.9708
+Epoch 00013: val_loss did not improve from 0.16775
+800/800 [==============================] - 1872s 2s/step - loss: 0.0703 - categorical_accuracy: 0.9708 - val_loss: 0.2453 - val_categorical_accuracy: 0.9355
+Epoch 14/15
+800/800 [==============================] - ETA: 0s - loss: 0.0680 - categorical_accuracy: 0.9718
+Epoch 00014: val_loss did not improve from 0.16775
+800/800 [==============================] - 1868s 2s/step - loss: 0.0680 - categorical_accuracy: 0.9718 - val_loss: 0.2332 - val_categorical_accuracy: 0.9394
+Epoch 15/15
+800/800 [==============================] - ETA: 0s - loss: 0.0660 - categorical_accuracy: 0.9726
+Epoch 00015: val_loss did not improve from 0.16775
+800/800 [==============================] - 1871s 2s/step - loss: 0.0660 - categorical_accuracy: 0.9726 - val_loss: 3.1635 - val_categorical_accuracy: 0.7992
+[INFO] Finishing...
+
+Process finished with exit code 0
