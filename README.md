@@ -1,5 +1,6 @@
 ﻿# SERR-U-Net-Retinal-Vessel-Segmentation
 SERR-U-Net: A improved U-Net Framework with a Saliency Mechanism for Retinal Vessel Segmentation
+(The code is only partially public.)
 
  1 Overview
  2 Datasets
